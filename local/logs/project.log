@@ -1,0 +1,69 @@
+2019-12-11T14:24:51.772Z - normal: Load ~/.CocosCreator/settings.json
+2019-12-11T14:24:51.805Z - normal: Initializing Asset Database
+2019-12-11T14:24:51.806Z - normal: checking language setting...
+2019-12-11T14:24:51.806Z - normal: Language: zh
+2019-12-11T14:24:52.177Z - success: preview server running at http://localhost:7456
+2019-12-11T14:24:52.203Z - success: protocol editor-framework registered
+2019-12-11T14:24:52.203Z - success: protocol app registered
+2019-12-11T14:24:52.203Z - success: protocol theme registered
+2019-12-11T14:24:52.203Z - success: protocol packages registered
+2019-12-11T14:24:52.203Z - success: protocol uuid registerred
+2019-12-11T14:24:52.203Z - success: protocol db registerred
+2019-12-11T14:24:52.203Z - success: protocol thumbnail registerred
+2019-12-11T14:24:52.203Z - success: protocol unpack registerred
+2019-12-11T14:24:52.203Z - success: protocol disable-commonjs registerred
+2019-12-11T14:24:52.283Z - normal: connected!
+2019-12-11T14:24:52.285Z - normal: Check project /Users/kuokuo/Desktop/CCC2D/Alive
+2019-12-11T14:24:52.286Z - normal: Initializing project /Users/kuokuo/Desktop/CCC2D/Alive
+2019-12-11T14:24:52.505Z - normal: Initializing Cocos2d
+2019-12-11T14:24:52.887Z - normal: Initializing engine extends
+2019-12-11T14:24:52.926Z - success: alipay-adapter loaded
+2019-12-11T14:24:52.937Z - success: asset-db-debugger loaded
+2019-12-11T14:24:52.940Z - success: baidu-adapter loaded
+2019-12-11T14:24:52.944Z - success: color-picker loaded
+2019-12-11T14:24:53.034Z - success: fb-audience-network loaded
+2019-12-11T14:24:53.062Z - success: fb-live-stream loaded
+2019-12-11T14:24:53.063Z - success: google-play-instant loaded
+2019-12-11T14:24:53.066Z - success: huawei-runtime loaded
+2019-12-11T14:24:53.188Z - success: cpk-publish loaded
+2019-12-11T14:24:53.189Z - success: jsb-adapter loaded
+2019-12-11T14:24:53.191Z - success: oppo-runtime loaded
+2019-12-11T14:24:53.197Z - success: package-manager loaded
+2019-12-11T14:24:53.260Z - success: qqplay-adapter loaded
+2019-12-11T14:24:53.261Z - success: runtime-dev-tools loaded
+2019-12-11T14:24:53.267Z - success: sdkbox loaded
+2019-12-11T14:24:53.273Z - success: tester loaded
+2019-12-11T14:24:53.278Z - success: ui-kit-preview-extra loaded
+2019-12-11T14:24:53.285Z - success: ui-kit-preview loaded
+2019-12-11T14:24:53.291Z - success: ui-kit loaded
+2019-12-11T14:24:53.294Z - success: vivo-runtime loaded
+2019-12-11T14:24:53.294Z - success: weapp-adapter loaded
+2019-12-11T14:24:53.294Z - success: xiaomi-adapter loaded
+2019-12-11T14:24:53.295Z - success: alipay-minigame loaded
+2019-12-11T14:24:53.328Z - success: assets loaded
+2019-12-11T14:24:53.334Z - success: builder loaded
+2019-12-11T14:24:53.484Z - success: cocos-services loaded
+2019-12-11T14:24:53.492Z - success: console loaded
+2019-12-11T14:24:53.514Z - success: fb-instant-games loaded
+2019-12-11T14:24:53.520Z - success: game-window loaded
+2019-12-11T14:24:53.521Z - success: google-instant-games loaded
+2019-12-11T14:24:53.527Z - success: hierarchy loaded
+2019-12-11T14:24:53.536Z - success: inspector loaded
+2019-12-11T14:24:53.536Z - success: keystore loaded
+2019-12-11T14:24:53.543Z - success: node-library loaded
+2019-12-11T14:24:53.544Z - success: package-asset loaded
+2019-12-11T14:24:53.545Z - success: preferences loaded
+2019-12-11T14:24:53.551Z - success: project-exporter loaded
+2019-12-11T14:24:53.558Z - success: project-importer loaded
+2019-12-11T14:24:53.564Z - success: project-settings loaded
+2019-12-11T14:24:53.571Z - success: scene loaded
+2019-12-11T14:24:53.572Z - success: simulator-debugger loaded
+2019-12-11T14:24:53.573Z - success: sprite-editor loaded
+2019-12-11T14:24:53.579Z - success: store loaded
+2019-12-11T14:24:53.589Z - success: timeline loaded
+2019-12-11T14:24:53.591Z - success: xiaomi-runtime loaded
+2019-12-11T14:24:54.114Z - normal: Loading packages
+2019-12-11T14:24:54.121Z - normal: Watching packages
+2019-12-11T14:24:54.183Z - normal: Run Application
+2019-12-11T14:24:54.645Z - info: Cocos Services load base data!
+2019-12-11T14:25:17.448Z - normal: Resolution not valid
