@@ -1,5 +1,5 @@
-"use strict";
-cc._RF.push(module, 'abf70K7oktPNL/9tXR78dt6', 'bullet_1');
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/game/bullet/bullet_1.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'abf70K7oktPNL/9tXR78dt6', 'bullet_1', __filename);
 // script/bullet/bullet_1.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -34,3 +34,15 @@ var Bullet_1 = /** @class */ (function (_super) {
 exports.Bullet_1 = Bullet_1;
 
 cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=bullet_1.js.map
+        

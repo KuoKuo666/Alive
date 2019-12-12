@@ -1,5 +1,5 @@
-"use strict";
-cc._RF.push(module, '07380uikSlEb7kTlYWa/2h3', 'bulletFactory');
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/game/bullet/bulletFactory.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '07380uikSlEb7kTlYWa/2h3', 'bulletFactory', __filename);
 // script/game/bullet/bulletFactory.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -64,3 +64,15 @@ var BulletFactory = /** @class */ (function (_super) {
 exports.default = BulletFactory;
 
 cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=bulletFactory.js.map
+        

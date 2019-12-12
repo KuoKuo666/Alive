@@ -1,5 +1,5 @@
-"use strict";
-cc._RF.push(module, 'bff645Q53hHG6uf1Qxgp7ng', 'bulletBase');
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/game/bullet/bulletBase.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'bff645Q53hHG6uf1Qxgp7ng', 'bulletBase', __filename);
 // script/bullet/bulletBase.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -62,3 +62,15 @@ var BulletBase = /** @class */ (function (_super) {
 exports.BulletBase = BulletBase;
 
 cc._RF.pop();
+        }
+        if (CC_EDITOR) {
+            __define(__module.exports, __require, __module);
+        }
+        else {
+            cc.registerModuleFunc(__filename, function () {
+                __define(__module.exports, __require, __module);
+            });
+        }
+        })();
+        //# sourceMappingURL=bulletBase.js.map
+        
