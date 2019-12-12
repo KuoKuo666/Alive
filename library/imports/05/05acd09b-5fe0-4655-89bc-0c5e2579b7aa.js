@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '05acdCbX+BGVYm8DF4lebeq', 'bullet_3');
-// script/bullet/bullet_3.ts
+// script/game/bullet/bullet_3.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var bulletBase_1 = require("./bulletBase");
@@ -10,11 +10,8 @@ var Bullet_3 = /** @class */ (function (_super) {
     function Bullet_3() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Bullet_3.prototype.onLoad = function () {
-        _super.prototype.onLoad.call(this);
-    };
-    Bullet_3.prototype.reuse = function (bulletFactory) {
-        _super.prototype.reuse.call(this, bulletFactory);
+    Bullet_3.prototype.reuse = function (bulletFactory, dirX, dirY, speed, tag) {
+        _super.prototype.reuse.call(this, bulletFactory, dirX, dirY, speed, tag);
     };
     Bullet_3.prototype.unuse = function () {
         _super.prototype.unuse.call(this);

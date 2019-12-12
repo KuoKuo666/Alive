@@ -1,6 +1,6 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/game/bullet/bullet_0.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
 cc._RF.push(module, '2fd46PBiUdIc6ji0RsIzHl3', 'bullet_0', __filename);
-// script/bullet/bullet_0.ts
+// script/game/bullet/bullet_0.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var bulletBase_1 = require("./bulletBase");
@@ -10,11 +10,8 @@ var Bullet_0 = /** @class */ (function (_super) {
     function Bullet_0() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Bullet_0.prototype.onLoad = function () {
-        _super.prototype.onLoad.call(this);
-    };
-    Bullet_0.prototype.reuse = function (bulletFactory) {
-        _super.prototype.reuse.call(this, bulletFactory);
+    Bullet_0.prototype.reuse = function (bulletFactory, dirX, dirY, speed, tag) {
+        _super.prototype.reuse.call(this, bulletFactory, dirX, dirY, speed, tag);
     };
     Bullet_0.prototype.unuse = function () {
         _super.prototype.unuse.call(this);

@@ -9,9 +9,8 @@ var Over = /** @class */ (function (_super) {
     function Over() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    // LIFE-CYCLE CALLBACKS:
-    // onLoad () {}
-    Over.prototype.start = function () {
+    Over.prototype.again = function () {
+        cc.director.loadScene('game');
     };
     Over = __decorate([
         ccclass

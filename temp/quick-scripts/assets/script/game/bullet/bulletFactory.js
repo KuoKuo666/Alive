@@ -41,12 +41,12 @@ var BulletFactory = /** @class */ (function (_super) {
             this.bulletPools[BulletType.B].put(cc.instantiate(this.bulletPrefab[BulletType.B]));
         }
     };
-    BulletFactory.prototype.createBullet = function (type) {
+    BulletFactory.prototype.createBullet = function (type, dirX, dirY, speed) {
         var bullet = undefined;
         if (this.bulletPools[type].size() < 0) {
             this.bulletPools[type].put(cc.instantiate(this.bulletPrefab[type]));
         }
-        bullet = this.bulletPools[type].get(this);
+        bullet = this.bulletPools[type].get(this, dirX, dirY, speed, type);
         this.node.addChild(bullet);
         return bullet;
     };

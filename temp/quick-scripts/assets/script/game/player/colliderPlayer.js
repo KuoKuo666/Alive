@@ -9,6 +9,9 @@ var ColliderPlayer = /** @class */ (function (_super) {
     function ColliderPlayer() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    ColliderPlayer.prototype.onLoad = function () {
+        cc.director.getCollisionManager().enabled = true;
+    };
     ColliderPlayer.prototype.onCollisionEnter = function (other, self) {
         cc.director.loadScene('over');
     };

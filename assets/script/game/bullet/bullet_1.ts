@@ -1,16 +1,12 @@
 import { BulletBase } from "./bulletBase"
-import BulletFactory from "./bulletFactory"
+import BulletFactory, { BulletType } from "./bulletFactory"
 const {ccclass, property} = cc._decorator
 
 @ccclass
 export class Bullet_1 extends BulletBase {
-    
-    onLoad (): void {
-        super.onLoad()
-    }
 
-    reuse (bulletFactory: BulletFactory): void {
-        super.reuse(bulletFactory)
+    reuse (bulletFactory: BulletFactory, dirX: number, dirY: number, speed: number, tag: BulletType): void {
+        super.reuse(bulletFactory, dirX, dirY, speed, tag)
     }
 
     unuse (): void {
