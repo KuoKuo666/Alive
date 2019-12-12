@@ -569,11 +569,6 @@
     "meta": 1576166147701,
     "relativePath": "script/game/bullet/bullet_3.ts"
   },
-  "07380ba2-9129-446f-b913-95859aff6877": {
-    "asset": 1576166144426,
-    "meta": 1576166147734,
-    "relativePath": "script/game/bullet/bulletFactory.ts"
-  },
   "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
     "asset": 1576166167758,
     "meta": 1576166212239,
@@ -583,5 +578,10 @@
     "asset": 1576166204846,
     "meta": 1576166212240,
     "relativePath": "script/game/player/colliderPlayer.ts"
+  },
+  "07380ba2-9129-446f-b913-95859aff6877": {
+    "asset": 1576166346087,
+    "meta": 1576166372106,
+    "relativePath": "script/game/bullet/bulletFactory.ts"
   }
 }
