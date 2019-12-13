@@ -10,18 +10,10 @@ var Bullet_2 = /** @class */ (function (_super) {
     function Bullet_2() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Bullet_2.prototype.reuse = function (bulletFactory, dirX, dirY, speed, tag) {
-        _super.prototype.reuse.call(this, bulletFactory, dirX, dirY, speed, tag);
-    };
-    Bullet_2.prototype.unuse = function () {
-        _super.prototype.unuse.call(this);
-    };
-    /** 碰撞后回收子弹 */
-    Bullet_2.prototype.onCollisionEnter = function (other, self) {
-        _super.prototype.onCollisionEnter.call(this, other, self);
-    };
+    // 自旋转
     Bullet_2.prototype.update = function (dt) {
         _super.prototype.update.call(this, dt);
+        this.node.angle += 50 * dt;
     };
     Bullet_2 = __decorate([
         ccclass

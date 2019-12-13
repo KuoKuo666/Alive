@@ -18,25 +18,26 @@ var BulletBase = /** @class */ (function (_super) {
         _this.bulletFactory = undefined;
         return _this;
     }
-    BulletBase.prototype.reuse = function (bulletFactory, dirX, dirY, speed, tag) {
+    /** 从节点池取出时初始化属性 */
+    BulletBase.prototype.reuse = function (bulletFactory, dir, speed, tag) {
         this.bulletFactory = bulletFactory;
-        this.setDir(dirX, dirY);
+        this.setDir(dir);
         this.setSpeed(speed);
         this.setTag(tag);
     };
     BulletBase.prototype.unuse = function () {
-        // console.log('回收成功')
+        // Util.log('回收成功')
     };
     /** 碰撞后回收子弹 */
     BulletBase.prototype.onCollisionEnter = function (other, self) {
-        console.log('碰撞');
+        // Util.log('碰撞')
     };
     BulletBase.prototype.setSpeed = function (speed) {
         this.moveSpeed = speed;
     };
-    BulletBase.prototype.setDir = function (dirX, dirY) {
-        this.moveDir.x = dirX;
-        this.moveDir.y = dirY;
+    BulletBase.prototype.setDir = function (dir) {
+        this.moveDir.x = dir.x;
+        this.moveDir.y = dir.y;
     };
     BulletBase.prototype.setTag = function (tag) {
         this.tag = tag;
@@ -48,14 +49,14 @@ var BulletBase = /** @class */ (function (_super) {
         if (this.moveSpeed === 0)
             return;
         if (this.moveDir.x !== 0) {
-            this.node.x += this.moveDir.x * this.moveSpeed;
+            this.node.x += this.moveDir.x * this.moveSpeed * dt;
         }
         if (this.moveDir.y !== 0) {
-            this.node.y += this.moveDir.y * this.moveSpeed;
+            this.node.y += this.moveDir.y * this.moveSpeed * dt;
         }
         /** 边界回收 */
         if (Math.abs(this.node.x) > 360 || Math.abs(this.node.y) > 640) {
-            console.log('回收');
+            // Util.log('边界回收')
             this.bulletFactory.bulletPools[this.getTag()].put(this.node);
         }
     };

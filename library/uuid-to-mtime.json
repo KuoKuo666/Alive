@@ -420,17 +420,17 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1576166317038,
-    "meta": 1576166317043,
+    "asset": 1576254981557,
+    "meta": 1576254981560,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
-    "asset": 1576158064934,
+    "asset": 1576158626163,
     "meta": 1576158038633,
     "relativePath": "texture"
   },
   "ee51fefe-63a5-453b-83bf-9ed3bfe40714": {
-    "asset": 1576158046187,
+    "asset": 1576164116058,
     "meta": 1576158046195,
     "relativePath": "script"
   },
@@ -440,7 +440,7 @@
     "relativePath": "sound"
   },
   "006fbc79-a042-4eeb-aceb-59e3b8f8d072": {
-    "asset": 1576158075268,
+    "asset": 1576161817395,
     "meta": 1576158075268,
     "relativePath": "prefab"
   },
@@ -494,11 +494,6 @@
     "meta": 1576158626212,
     "relativePath": "texture/boss.png"
   },
-  "b9f3e315-7238-4439-bd9e-54557a03c309": {
-    "asset": 1576161334006,
-    "meta": 1576161362081,
-    "relativePath": "script/game/player/movePlayer.ts"
-  },
   "fc95e264-342f-4bae-9740-253b3d4abed4": {
     "asset": 1576161603118,
     "meta": 1576161603120,
@@ -519,23 +514,18 @@
     "meta": 1576161913974,
     "relativePath": "prefab/bullet_3.prefab"
   },
-  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
-    "asset": 1576163630596,
-    "meta": 1576163638360,
-    "relativePath": "script/game/boss/moveEnemy.ts"
-  },
   "7d9bc3c2-457c-4fc7-90b8-a71e3f0dc164": {
-    "asset": 1576164338352,
-    "meta": 1576164338359,
+    "asset": 1576254979286,
+    "meta": 1576254979290,
     "relativePath": "over.fire"
   },
   "8cd24ae6-7f92-4538-a7f4-78739b201b3e": {
-    "asset": 1576164102028,
+    "asset": 1576164109994,
     "meta": 1576164102029,
     "relativePath": "script/game"
   },
   "c354a8a8-f357-4004-99ae-4b29e6d2d369": {
-    "asset": 1576164114065,
+    "asset": 1576164127138,
     "meta": 1576164114066,
     "relativePath": "script/over"
   },
@@ -544,44 +534,64 @@
     "meta": 1576164326383,
     "relativePath": "script/over/overManager.ts"
   },
-  "09f92453-6edb-4cdc-aa3f-cda56ee3785e": {
-    "asset": 1576165448557,
-    "meta": 1576165451081,
-    "relativePath": "script/game/boss/shootManager.ts"
-  },
-  "2fd463c1-8947-4873-a8e2-d11b08cc7977": {
-    "asset": 1576166111130,
-    "meta": 1576166147656,
-    "relativePath": "script/game/bullet/bullet_0.ts"
-  },
-  "abf702bb-a24b-4f34-bffd-b5747bf1db7a": {
-    "asset": 1576166118038,
-    "meta": 1576166147662,
-    "relativePath": "script/game/bullet/bullet_1.ts"
-  },
-  "4b3e9ecb-b9bf-4940-ada4-f7a65f73326b": {
-    "asset": 1576166122316,
-    "meta": 1576166147674,
-    "relativePath": "script/game/bullet/bullet_2.ts"
-  },
-  "05acd09b-5fe0-4655-89bc-0c5e2579b7aa": {
-    "asset": 1576166127760,
-    "meta": 1576166147701,
-    "relativePath": "script/game/bullet/bullet_3.ts"
-  },
-  "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
-    "asset": 1576166167758,
-    "meta": 1576166212239,
-    "relativePath": "script/game/bullet/bulletBase.ts"
-  },
   "446b9473-26fb-4c20-8235-c3a8befaf9e8": {
     "asset": 1576166204846,
     "meta": 1576166212240,
     "relativePath": "script/game/player/colliderPlayer.ts"
   },
+  "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
+    "asset": 1576251396693,
+    "meta": 1576251413122,
+    "relativePath": "script/game/bullet/bulletBase.ts"
+  },
+  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
+    "asset": 1576252243001,
+    "meta": 1576252475558,
+    "relativePath": "script/game/boss/moveEnemy.ts"
+  },
+  "2fd463c1-8947-4873-a8e2-d11b08cc7977": {
+    "asset": 1576253285117,
+    "meta": 1576253337503,
+    "relativePath": "script/game/bullet/bullet_0.ts"
+  },
+  "abf702bb-a24b-4f34-bffd-b5747bf1db7a": {
+    "asset": 1576253288278,
+    "meta": 1576253337511,
+    "relativePath": "script/game/bullet/bullet_1.ts"
+  },
+  "4b3e9ecb-b9bf-4940-ada4-f7a65f73326b": {
+    "asset": 1576253357745,
+    "meta": 1576253359797,
+    "relativePath": "script/game/bullet/bullet_2.ts"
+  },
+  "66a99edb-9f57-4909-ae5f-a9164c7240ca": {
+    "asset": 1576254154658,
+    "meta": 1576254154659,
+    "relativePath": "texture/AutoAtlas.pac"
+  },
+  "05acd09b-5fe0-4655-89bc-0c5e2579b7aa": {
+    "asset": 1576254788436,
+    "meta": 1576254845308,
+    "relativePath": "script/game/bullet/bullet_3.ts"
+  },
+  "4b76d225-4bd7-408c-b628-7c35c29632dd": {
+    "asset": 1576254796772,
+    "meta": 1576254845310,
+    "relativePath": "script/util.ts"
+  },
+  "b9f3e315-7238-4439-bd9e-54557a03c309": {
+    "asset": 1576255150399,
+    "meta": 1576255151756,
+    "relativePath": "script/game/player/movePlayer.ts"
+  },
+  "09f92453-6edb-4cdc-aa3f-cda56ee3785e": {
+    "asset": 1576255227709,
+    "meta": 1576255261399,
+    "relativePath": "script/game/boss/shootManager.ts"
+  },
   "07380ba2-9129-446f-b913-95859aff6877": {
-    "asset": 1576166346087,
-    "meta": 1576166372106,
+    "asset": 1576255259168,
+    "meta": 1576255261400,
     "relativePath": "script/game/bullet/bulletFactory.ts"
   }
 }

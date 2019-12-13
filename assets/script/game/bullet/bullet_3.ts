@@ -1,25 +1,21 @@
 import { BulletBase } from "./bulletBase"
-import BulletFactory, { BulletType } from "./bulletFactory"
 const {ccclass, property} = cc._decorator
 
 @ccclass
 export class Bullet_3 extends BulletBase {
 
-    reuse (bulletFactory: BulletFactory, dirX: number, dirY: number, speed: number, tag: BulletType): void {
-        super.reuse(bulletFactory, dirX, dirY, speed, tag)
-    }
+    /** 收缩方向 */
+    scaleDir: number = 1
 
-    unuse (): void {
-        super.unuse()
-    }
-
-    /** 碰撞后回收子弹 */
-    onCollisionEnter (other: cc.Collider, self: cc.Collider): void {
-        super.onCollisionEnter(other, self)
-    }
-
+    // 收缩
     update (dt: number): void {
         super.update(dt)
+        if (this.node.scaleX > 1.3) {
+            this.scaleDir = -1
+        } else if (this.node.scaleX < 1) {
+            this.scaleDir = 1
+        }
+        this.node.scale += this.scaleDir * 5 * dt
     }
 
 } 

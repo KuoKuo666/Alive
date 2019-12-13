@@ -1,6 +1,6 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/script/game/player/movePlayer.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
 cc._RF.push(module, 'b9f3eMVcjhEOb2eVFV6A8MJ', 'movePlayer', __filename);
-// script/player/movePlayer.ts
+// script/game/player/movePlayer.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -22,6 +22,16 @@ var MovePlayer = /** @class */ (function (_super) {
         var delta = event.getDelta();
         this.node.x += delta.x;
         this.node.y += delta.y;
+    };
+    MovePlayer.prototype.update = function (dt) {
+        if (this.node.x > 360)
+            this.node.x = 360;
+        if (this.node.x < -360)
+            this.node.x = -360;
+        if (this.node.y > 640)
+            this.node.y = 640;
+        if (this.node.y < -640)
+            this.node.y = -640;
     };
     MovePlayer = __decorate([
         ccclass

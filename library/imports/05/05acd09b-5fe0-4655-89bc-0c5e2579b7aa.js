@@ -8,20 +8,21 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Bullet_3 = /** @class */ (function (_super) {
     __extends(Bullet_3, _super);
     function Bullet_3() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /** 收缩方向 */
+        _this.scaleDir = 1;
+        return _this;
     }
-    Bullet_3.prototype.reuse = function (bulletFactory, dirX, dirY, speed, tag) {
-        _super.prototype.reuse.call(this, bulletFactory, dirX, dirY, speed, tag);
-    };
-    Bullet_3.prototype.unuse = function () {
-        _super.prototype.unuse.call(this);
-    };
-    /** 碰撞后回收子弹 */
-    Bullet_3.prototype.onCollisionEnter = function (other, self) {
-        _super.prototype.onCollisionEnter.call(this, other, self);
-    };
+    // 收缩
     Bullet_3.prototype.update = function (dt) {
         _super.prototype.update.call(this, dt);
+        if (this.node.scaleX > 1.3) {
+            this.scaleDir = -1;
+        }
+        else if (this.node.scaleX < 1) {
+            this.scaleDir = 1;
+        }
+        this.node.scale += this.scaleDir * 5 * dt;
     };
     Bullet_3 = __decorate([
         ccclass

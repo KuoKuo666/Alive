@@ -34,19 +34,22 @@ var BulletFactory = /** @class */ (function (_super) {
         this.bulletPools[BulletType.F] = new cc.NodePool(bullet_2_1.Bullet_2);
         this.bulletPools[BulletType.B] = new cc.NodePool(bullet_3_1.Bullet_3);
         // 存入子弹
-        for (var i = 0; i < 200; i++) {
-            this.bulletPools[BulletType.R].put(cc.instantiate(this.bulletPrefab[BulletType.R]));
-            this.bulletPools[BulletType.M].put(cc.instantiate(this.bulletPrefab[BulletType.M]));
-            this.bulletPools[BulletType.F].put(cc.instantiate(this.bulletPrefab[BulletType.F]));
-            this.bulletPools[BulletType.B].put(cc.instantiate(this.bulletPrefab[BulletType.B]));
-        }
+        this.putBulletInPool(BulletType.R, 300);
+        this.putBulletInPool(BulletType.M, 200);
+        this.putBulletInPool(BulletType.F, 100);
+        this.putBulletInPool(BulletType.B, 50);
     };
-    BulletFactory.prototype.createBullet = function (type, dirX, dirY, speed) {
-        var bullet = undefined;
-        if (this.bulletPools[type].size() < 0) {
+    BulletFactory.prototype.putBulletInPool = function (type, num) {
+        for (var i = 0; i < num; i++) {
             this.bulletPools[type].put(cc.instantiate(this.bulletPrefab[type]));
         }
-        bullet = this.bulletPools[type].get(this, dirX, dirY, speed, type);
+    };
+    BulletFactory.prototype.createBullet = function (type, dir, speed) {
+        var bullet = undefined;
+        if (this.bulletPools[type].size() <= 0) {
+            this.bulletPools[type].put(cc.instantiate(this.bulletPrefab[type]));
+        }
+        bullet = this.bulletPools[type].get(this, dir, speed, type);
         this.node.addChild(bullet);
         return bullet;
     };

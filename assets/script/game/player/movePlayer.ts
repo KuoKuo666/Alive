@@ -21,4 +21,11 @@ export default class MovePlayer extends cc.Component {
         this.node.y += delta.y
     }
 
+    update (dt: number): void {
+        if (this.node.x > 360) this.node.x = 360
+        if (this.node.x < -360) this.node.x = -360
+        if (this.node.y > 640) this.node.y = 640
+        if (this.node.y < -640) this.node.y = -640
+    }
+
 }

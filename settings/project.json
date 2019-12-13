@@ -17,7 +17,32 @@
   ],
   "design-resolution-height": 640,
   "design-resolution-width": 960,
-  "excluded-modules": [],
+  "excluded-modules": [
+    "Mask",
+    "Graphics",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "RichText",
+    "MotionStreak",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Layout",
+    "EditBox",
+    "VideoPlayer",
+    "WebView",
+    "Animation",
+    "Action",
+    "Native Socket",
+    "3D",
+    "3D Primitive"
+  ],
   "facebook": {
     "appID": "",
     "audience": {
@@ -35,7 +60,7 @@
     "player",
     "enemy"
   ],
-  "last-module-event-record-time": 0,
+  "last-module-event-record-time": 1576255472398,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,

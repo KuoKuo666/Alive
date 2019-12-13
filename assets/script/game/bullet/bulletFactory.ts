@@ -34,20 +34,24 @@ export default class BulletFactory extends cc.Component {
         this.bulletPools[BulletType.F] = new cc.NodePool(Bullet_2)
         this.bulletPools[BulletType.B] = new cc.NodePool(Bullet_3)
         // 存入子弹
-        for (let i = 0; i < 200; i++) {
-            this.bulletPools[BulletType.R].put(cc.instantiate(this.bulletPrefab[BulletType.R]))
-            this.bulletPools[BulletType.M].put(cc.instantiate(this.bulletPrefab[BulletType.M]))
-            this.bulletPools[BulletType.F].put(cc.instantiate(this.bulletPrefab[BulletType.F]))
-            this.bulletPools[BulletType.B].put(cc.instantiate(this.bulletPrefab[BulletType.B]))
+        this.putBulletInPool(BulletType.R, 300)
+        this.putBulletInPool(BulletType.M, 200)
+        this.putBulletInPool(BulletType.F, 100)
+        this.putBulletInPool(BulletType.B, 50)
+    }
+
+    putBulletInPool (type: BulletType, num: number): void {
+        for (let i = 0; i < num; i++) {
+            this.bulletPools[type].put(cc.instantiate(this.bulletPrefab[type]))
         }
     }
 
-    createBullet (type: BulletType, dirX: number, dirY: number, speed: number): cc.Node {
+    createBullet (type: BulletType, dir: cc.Vec2, speed: number): cc.Node {
         let bullet: cc.Node | undefined = undefined
-        if (this.bulletPools[type].size() < 0) {
+        if (this.bulletPools[type].size() <= 0) {
             this.bulletPools[type].put(cc.instantiate(this.bulletPrefab[type]))
         }
-        bullet = this.bulletPools[type].get(this, dirX, dirY, speed, type)
+        bullet = this.bulletPools[type].get(this, dir, speed, type)
         this.node.addChild(bullet)
         return bullet
     }

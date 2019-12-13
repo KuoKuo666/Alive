@@ -1,0 +1,258 @@
+{
+  "mtimes": {
+    "66a99edb-9f57-4909-ae5f-a9164c7240ca": {
+      "assetMtime": 1576254154658,
+      "metaMtime": 1576254154659
+    },
+    "0998c178-3691-447d-8a8b-bdfbfe838ab2": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626177
+    },
+    "a428cc82-0419-42b7-b4d3-8768232aa419": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626177
+    },
+    "78c0a0bd-affd-4125-bf0c-26576d7c1f12": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626190
+    },
+    "7c7547eb-750a-4bad-96bd-59515e2650c7": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626190
+    },
+    "7d4925af-cfbf-4cb1-ab20-b9f1404638ad": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626190
+    },
+    "7c3e3725-708b-4796-b3e9-88e0653a2f0b": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626190
+    },
+    "9a324c00-8ea0-4f25-9ec5-c85762539c43": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626199
+    },
+    "e584253f-e835-4d28-a248-e43cc533c501": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626199
+    },
+    "ac80f170-f81f-47d5-b708-beaed87d031b": {
+      "assetMtime": 1576158626160,
+      "metaMtime": 1576158626212
+    },
+    "532528fb-3da0-41b7-b62d-2db3961f3764": {
+      "assetMtime": 1576158626160,
+      "metaMtime": 1576158626212
+    },
+    "ce24c629-1f74-45f7-9f30-3c3ad1b88cf3": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626203
+    },
+    "a9c7d69d-ed68-4607-92ea-52ef71a614ed": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626203
+    },
+    "f2a6d3de-c210-4c5e-9845-f350567d4709": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626176
+    },
+    "a27e06a4-3079-4cd7-b0a8-8685fe406499": {
+      "assetMtime": 1576158626159,
+      "metaMtime": 1576158626176
+    }
+  },
+  "result": {
+    "name": "AutoAtlas",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.0",
+    "uuid": "66a99edb-9f57-4909-ae5f-a9164c7240ca",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": false,
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "bullet_0",
+            "uuid": "9a324c00-8ea0-4f25-9ec5-c85762539c43",
+            "textureUuid": "e584253f-e835-4d28-a248-e43cc533c501",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_3.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 30,
+              "height": 30,
+              "rotatedWidth": 30,
+              "rotatedHeight": 30
+            },
+            "rawWidth": 30,
+            "rawHeight": 30,
+            "width": 36,
+            "height": 36,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/e5/e584253f-e835-4d28-a248-e43cc533c501.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 36,
+            "rotatedHeight": 36
+          },
+          {
+            "name": "bullet_2",
+            "uuid": "0998c178-3691-447d-8a8b-bdfbfe838ab2",
+            "textureUuid": "a428cc82-0419-42b7-b4d3-8768232aa419",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157602_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 39,
+              "width": 63,
+              "height": 62,
+              "rotatedWidth": 63,
+              "rotatedHeight": 62
+            },
+            "rawWidth": 63,
+            "rawHeight": 62,
+            "width": 69,
+            "height": 68,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/a4/a428cc82-0419-42b7-b4d3-8768232aa419.png",
+            "x": 0,
+            "y": 36,
+            "rotatedWidth": 69,
+            "rotatedHeight": 68
+          },
+          {
+            "name": "player",
+            "uuid": "7d4925af-cfbf-4cb1-ab20-b9f1404638ad",
+            "textureUuid": "7c3e3725-708b-4796-b3e9-88e0653a2f0b",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_2.png",
+            "trim": {
+              "x": 72,
+              "y": 3,
+              "width": 63,
+              "height": 63,
+              "rotatedWidth": 63,
+              "rotatedHeight": 63
+            },
+            "rawWidth": 63,
+            "rawHeight": 63,
+            "width": 69,
+            "height": 69,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/7c/7c3e3725-708b-4796-b3e9-88e0653a2f0b.png",
+            "x": 69,
+            "y": 0,
+            "rotatedWidth": 69,
+            "rotatedHeight": 69
+          },
+          {
+            "name": "bullet_1",
+            "uuid": "f2a6d3de-c210-4c5e-9845-f350567d4709",
+            "textureUuid": "a27e06a4-3079-4cd7-b0a8-8685fe406499",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_6.png",
+            "trim": {
+              "x": 3,
+              "y": 107,
+              "width": 100,
+              "height": 45,
+              "rotatedWidth": 100,
+              "rotatedHeight": 45
+            },
+            "rawWidth": 100,
+            "rawHeight": 45,
+            "width": 106,
+            "height": 51,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/a2/a27e06a4-3079-4cd7-b0a8-8685fe406499.png",
+            "x": 0,
+            "y": 104,
+            "rotatedWidth": 106,
+            "rotatedHeight": 51
+          },
+          {
+            "name": "background",
+            "uuid": "78c0a0bd-affd-4125-bf0c-26576d7c1f12",
+            "textureUuid": "7c7547eb-750a-4bad-96bd-59515e2650c7",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_1.png",
+            "trim": {
+              "x": 141,
+              "y": 3,
+              "width": 100,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 100
+            },
+            "rawWidth": 100,
+            "rawHeight": 100,
+            "width": 106,
+            "height": 106,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/7c/7c7547eb-750a-4bad-96bd-59515e2650c7.png",
+            "x": 138,
+            "y": 0,
+            "rotatedWidth": 106,
+            "rotatedHeight": 106
+          },
+          {
+            "name": "bullet_3",
+            "uuid": "ce24c629-1f74-45f7-9f30-3c3ad1b88cf3",
+            "textureUuid": "a9c7d69d-ed68-4607-92ea-52ef71a614ed",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 158,
+              "width": 100,
+              "height": 100,
+              "rotatedWidth": 100,
+              "rotatedHeight": 100
+            },
+            "rawWidth": 100,
+            "rawHeight": 100,
+            "width": 106,
+            "height": 106,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/a9/a9c7d69d-ed68-4607-92ea-52ef71a614ed.png",
+            "x": 0,
+            "y": 155,
+            "rotatedWidth": 106,
+            "rotatedHeight": 106
+          },
+          {
+            "name": "boss",
+            "uuid": "ac80f170-f81f-47d5-b708-beaed87d031b",
+            "textureUuid": "532528fb-3da0-41b7-b62d-2db3961f3764",
+            "path": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/trimImages/spritesheet_js_1576254157604_image_4.png",
+            "trim": {
+              "x": 109,
+              "y": 109,
+              "width": 143,
+              "height": 154,
+              "rotatedWidth": 143,
+              "rotatedHeight": 154
+            },
+            "rawWidth": 143,
+            "rawHeight": 154,
+            "width": 149,
+            "height": 160,
+            "originalPath": "/Users/kuokuo/Desktop/CCC2D/Alive/library/imports/53/532528fb-3da0-41b7-b62d-2db3961f3764.png",
+            "x": 106,
+            "y": 106,
+            "rotatedWidth": 149,
+            "rotatedHeight": 160
+          }
+        ],
+        "width": 255,
+        "height": 266,
+        "name": "AutoAtlas-1",
+        "imagePath": "/Users/kuokuo/Desktop/CCC2D/Alive/temp/TexturePacker/preview/texture/AutoAtlas.pac/AutoAtlas-1.png"
+      }
+    ],
+    "unpackedTextures": []
+  }
+}
