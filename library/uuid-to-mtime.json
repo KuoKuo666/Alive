@@ -420,17 +420,17 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1576254981557,
-    "meta": 1576254981560,
+    "asset": 1576301573392,
+    "meta": 1576301573407,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
-    "asset": 1576158626163,
+    "asset": 1576254154659,
     "meta": 1576158038633,
     "relativePath": "texture"
   },
   "ee51fefe-63a5-453b-83bf-9ed3bfe40714": {
-    "asset": 1576164116058,
+    "asset": 1576249921629,
     "meta": 1576158046195,
     "relativePath": "script"
   },
@@ -534,20 +534,10 @@
     "meta": 1576164326383,
     "relativePath": "script/over/overManager.ts"
   },
-  "446b9473-26fb-4c20-8235-c3a8befaf9e8": {
-    "asset": 1576166204846,
-    "meta": 1576166212240,
-    "relativePath": "script/game/player/colliderPlayer.ts"
-  },
   "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
     "asset": 1576251396693,
     "meta": 1576251413122,
     "relativePath": "script/game/bullet/bulletBase.ts"
-  },
-  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
-    "asset": 1576252243001,
-    "meta": 1576252475558,
-    "relativePath": "script/game/boss/moveEnemy.ts"
   },
   "2fd463c1-8947-4873-a8e2-d11b08cc7977": {
     "asset": 1576253285117,
@@ -584,14 +574,39 @@
     "meta": 1576255151756,
     "relativePath": "script/game/player/movePlayer.ts"
   },
-  "09f92453-6edb-4cdc-aa3f-cda56ee3785e": {
-    "asset": 1576255227709,
-    "meta": 1576255261399,
-    "relativePath": "script/game/boss/shootManager.ts"
-  },
   "07380ba2-9129-446f-b913-95859aff6877": {
     "asset": 1576255259168,
     "meta": 1576255261400,
     "relativePath": "script/game/bullet/bulletFactory.ts"
+  },
+  "277481cd-b0c6-4056-9f7f-c5d886cae9fd": {
+    "asset": 1576299105794,
+    "meta": 1576299108506,
+    "relativePath": "script/showTime.ts"
+  },
+  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
+    "asset": 1576299129847,
+    "meta": 1576299208618,
+    "relativePath": "script/game/boss/moveEnemy.ts"
+  },
+  "4d4ba6bb-d94a-4cf9-8c03-b054876fb826": {
+    "asset": 1576301032302,
+    "meta": 1576301039650,
+    "relativePath": "sound/bgm.mp3"
+  },
+  "446b9473-26fb-4c20-8235-c3a8befaf9e8": {
+    "asset": 1576301184643,
+    "meta": 1576301212989,
+    "relativePath": "script/game/player/colliderPlayer.ts"
+  },
+  "75e36f9b-b506-4177-a1ad-ec9e52281d9d": {
+    "asset": 1576301211768,
+    "meta": 1576301212989,
+    "relativePath": "script/musicManager.ts"
+  },
+  "09f92453-6edb-4cdc-aa3f-cda56ee3785e": {
+    "asset": 1576301298196,
+    "meta": 1576301299770,
+    "relativePath": "script/game/boss/shootManager.ts"
   }
 }

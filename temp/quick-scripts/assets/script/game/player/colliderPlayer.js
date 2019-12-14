@@ -13,6 +13,7 @@ var ColliderPlayer = /** @class */ (function (_super) {
         cc.director.getCollisionManager().enabled = true;
     };
     ColliderPlayer.prototype.onCollisionEnter = function (other, self) {
+        cc.audioEngine.stopMusic();
         cc.director.loadScene('over');
     };
     ColliderPlayer = __decorate([

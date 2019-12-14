@@ -18,19 +18,21 @@ var ShootManager = /** @class */ (function (_super) {
     }
     ShootManager.prototype.start = function () {
         var _this = this;
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, 0);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.M); }, 0.06, cc.macro.REPEAT_FOREVER, 5);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, 10);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, 15);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.B); }, 0.5, cc.macro.REPEAT_FOREVER, 20);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.M); }, 0.06, cc.macro.REPEAT_FOREVER, 25);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, 30);
-        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, 35);
+        var deltaTime = 5;
+        var startTime = 4;
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, startTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.M); }, 0.06, cc.macro.REPEAT_FOREVER, startTime + 1 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, startTime + 2 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, startTime + 3 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.B); }, 0.5, cc.macro.REPEAT_FOREVER, startTime + 4 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.M); }, 0.06, cc.macro.REPEAT_FOREVER, startTime + 5 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, startTime + 6 * deltaTime);
+        this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, startTime + 7 * deltaTime);
     };
     ShootManager.prototype.shoot = function (type) {
         if (type === bulletFactory_1.BulletType.R) {
             // 随机型
-            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.R, util_1.Util.randomDir(0, 360), 500);
+            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.R, util_1.Util.randomDir(0, 360), 800);
             bullet.setPosition(this.enemy.x, this.enemy.y);
         }
         else if (type === bulletFactory_1.BulletType.M) {
@@ -40,7 +42,7 @@ var ShootManager = /** @class */ (function (_super) {
                 this.typeMBulletAngle = 0;
             }
             var rad = cc.misc.degreesToRadians(this.typeMBulletAngle);
-            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.M, cc.v2(Math.cos(rad), Math.sin(rad)), 700);
+            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.M, cc.v2(Math.cos(rad), Math.sin(rad)), 650);
             bullet.angle = this.typeMBulletAngle + 90;
             bullet.setPosition(this.enemy.x, this.enemy.y);
         }
@@ -48,12 +50,12 @@ var ShootManager = /** @class */ (function (_super) {
             // 花型
             for (var i = 0; i <= 360; i += 30) {
                 var rad = cc.misc.degreesToRadians(i);
-                var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.F, cc.v2(Math.cos(rad), Math.sin(rad)), 500);
+                var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.F, cc.v2(Math.cos(rad), Math.sin(rad)), 600);
                 bullet.setPosition(this.enemy.x, this.enemy.y);
             }
         }
         else if (type === bulletFactory_1.BulletType.B) {
-            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.B, cc.v2(0, -1), 500);
+            var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.B, cc.v2(0, -1), 550);
             bullet.setPosition(this.enemy.x, this.enemy.y);
         }
     };

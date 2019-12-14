@@ -15,7 +15,7 @@ var MoveEnemy = /** @class */ (function (_super) {
         return _this;
     }
     MoveEnemy.prototype.start = function () {
-        this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 2);
+        this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 4);
     };
     MoveEnemy.prototype.randomDir = function () {
         var dir = util_1.Util.randomDir(0, 360);

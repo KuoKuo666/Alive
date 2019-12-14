@@ -10,7 +10,7 @@ export default class MoveEnemy extends cc.Component {
     speed: number = 200
 
     start (): void {
-        this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 2)
+        this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 4)
     }
 
     randomDir (): void {
