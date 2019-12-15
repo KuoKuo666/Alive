@@ -9,7 +9,7 @@ var ShowTime = /** @class */ (function (_super) {
     function ShowTime() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.label = undefined;
-        // 向下取整
+        // 向下取整，从 3 开始
         _this.time = 3.99;
         return _this;
     }

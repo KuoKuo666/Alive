@@ -37,6 +37,7 @@ var Util = /** @class */ (function () {
         var rad = cc.misc.degreesToRadians(angle);
         return cc.v2(Math.cos(rad), Math.sin(rad));
     };
+    /** 是否开发模式 */
     Util.isDebug = true;
     return Util;
 }());

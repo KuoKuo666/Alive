@@ -3,6 +3,9 @@ const {ccclass, property} = cc._decorator
 @ccclass
 export default class MovePlayer extends cc.Component {
 
+    @property(cc.Node)
+    player: cc.Node | undefined = undefined
+
     start (): void {
         this.openTouch()
     }
@@ -17,16 +20,16 @@ export default class MovePlayer extends cc.Component {
 
     onTouchMove (event: cc.Touch): void {
         let delta = event.getDelta()
-        this.node.x += delta.x
-        this.node.y += delta.y
+        this.player.x += delta.x
+        this.player.y += delta.y
     }
 
     update (dt: number): void {
         // 边界限制
-        if (this.node.x > 360) this.node.x = 360
-        if (this.node.x < -360) this.node.x = -360
-        if (this.node.y > 640) this.node.y = 640
-        if (this.node.y < -640) this.node.y = -640
+        if (this.player.x > 360) this.player.x = 360
+        if (this.player.x < -360) this.player.x = -360
+        if (this.player.y > 640) this.player.y = 640
+        if (this.player.y < -640) this.player.y = -640
     }
 
 }

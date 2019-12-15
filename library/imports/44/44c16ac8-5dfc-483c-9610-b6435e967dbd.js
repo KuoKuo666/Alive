@@ -15,6 +15,7 @@ var MoveEnemy = /** @class */ (function (_super) {
         return _this;
     }
     MoveEnemy.prototype.start = function () {
+        // 4 秒后开始运动，每 5 秒随机新方向
         this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 4);
     };
     MoveEnemy.prototype.randomDir = function () {

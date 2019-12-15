@@ -7,7 +7,9 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var MovePlayer = /** @class */ (function (_super) {
     __extends(MovePlayer, _super);
     function MovePlayer() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.player = undefined;
+        return _this;
     }
     MovePlayer.prototype.start = function () {
         this.openTouch();
@@ -20,19 +22,23 @@ var MovePlayer = /** @class */ (function (_super) {
     };
     MovePlayer.prototype.onTouchMove = function (event) {
         var delta = event.getDelta();
-        this.node.x += delta.x;
-        this.node.y += delta.y;
+        this.player.x += delta.x;
+        this.player.y += delta.y;
     };
     MovePlayer.prototype.update = function (dt) {
-        if (this.node.x > 360)
-            this.node.x = 360;
-        if (this.node.x < -360)
-            this.node.x = -360;
-        if (this.node.y > 640)
-            this.node.y = 640;
-        if (this.node.y < -640)
-            this.node.y = -640;
+        // 边界限制
+        if (this.player.x > 360)
+            this.player.x = 360;
+        if (this.player.x < -360)
+            this.player.x = -360;
+        if (this.player.y > 640)
+            this.player.y = 640;
+        if (this.player.y < -640)
+            this.player.y = -640;
     };
+    __decorate([
+        property(cc.Node)
+    ], MovePlayer.prototype, "player", void 0);
     MovePlayer = __decorate([
         ccclass
     ], MovePlayer);

@@ -18,8 +18,10 @@ var ShootManager = /** @class */ (function (_super) {
     }
     ShootManager.prototype.start = function () {
         var _this = this;
+        // 难度递增
         var deltaTime = 5;
         var startTime = 4;
+        // 匿名函数不会被同计时器覆盖
         this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, startTime);
         this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.M); }, 0.06, cc.macro.REPEAT_FOREVER, startTime + 1 * deltaTime);
         this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, startTime + 2 * deltaTime);
@@ -29,6 +31,7 @@ var ShootManager = /** @class */ (function (_super) {
         this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.R); }, 0.02, cc.macro.REPEAT_FOREVER, startTime + 6 * deltaTime);
         this.schedule(function () { return _this.shoot(bulletFactory_1.BulletType.F); }, 0.4, cc.macro.REPEAT_FOREVER, startTime + 7 * deltaTime);
     };
+    /** 简单射击工厂 */
     ShootManager.prototype.shoot = function (type) {
         if (type === bulletFactory_1.BulletType.R) {
             // 随机型
@@ -55,6 +58,7 @@ var ShootManager = /** @class */ (function (_super) {
             }
         }
         else if (type === bulletFactory_1.BulletType.B) {
+            // duang～ 型
             var bullet = this.bulletFactory.createBullet(bulletFactory_1.BulletType.B, cc.v2(0, -1), 550);
             bullet.setPosition(this.enemy.x, this.enemy.y);
         }

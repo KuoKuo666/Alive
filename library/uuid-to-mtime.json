@@ -420,8 +420,8 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1576401631488,
-    "meta": 1576401631502,
+    "asset": 1576420089767,
+    "meta": 1576420089771,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
@@ -564,30 +564,10 @@
     "meta": 1576254845308,
     "relativePath": "script/game/bullet/bullet_3.ts"
   },
-  "4b76d225-4bd7-408c-b628-7c35c29632dd": {
-    "asset": 1576254796772,
-    "meta": 1576254845310,
-    "relativePath": "script/util.ts"
-  },
-  "b9f3e315-7238-4439-bd9e-54557a03c309": {
-    "asset": 1576255150399,
-    "meta": 1576255151756,
-    "relativePath": "script/game/player/movePlayer.ts"
-  },
   "07380ba2-9129-446f-b913-95859aff6877": {
     "asset": 1576255259168,
     "meta": 1576255261400,
     "relativePath": "script/game/bullet/bulletFactory.ts"
-  },
-  "277481cd-b0c6-4056-9f7f-c5d886cae9fd": {
-    "asset": 1576299105794,
-    "meta": 1576299108506,
-    "relativePath": "script/showTime.ts"
-  },
-  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
-    "asset": 1576299129847,
-    "meta": 1576299208618,
-    "relativePath": "script/game/boss/moveEnemy.ts"
   },
   "4d4ba6bb-d94a-4cf9-8c03-b054876fb826": {
     "asset": 1576301032302,
@@ -604,9 +584,29 @@
     "meta": 1576301212989,
     "relativePath": "script/musicManager.ts"
   },
+  "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
+    "asset": 1576411213559,
+    "meta": 1576411483987,
+    "relativePath": "script/game/boss/moveEnemy.ts"
+  },
   "09f92453-6edb-4cdc-aa3f-cda56ee3785e": {
-    "asset": 1576301601580,
-    "meta": 1576401431605,
+    "asset": 1576411314582,
+    "meta": 1576411484003,
     "relativePath": "script/game/boss/shootManager.ts"
+  },
+  "277481cd-b0c6-4056-9f7f-c5d886cae9fd": {
+    "asset": 1576411388081,
+    "meta": 1576411484043,
+    "relativePath": "script/showTime.ts"
+  },
+  "4b76d225-4bd7-408c-b628-7c35c29632dd": {
+    "asset": 1576411449124,
+    "meta": 1576411484054,
+    "relativePath": "script/util.ts"
+  },
+  "b9f3e315-7238-4439-bd9e-54557a03c309": {
+    "asset": 1576420079955,
+    "meta": 1576420080774,
+    "relativePath": "script/game/player/movePlayer.ts"
   }
 }

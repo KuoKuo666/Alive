@@ -772,6 +772,9 @@
       "__id__": 14
     },
     "_enabled": true,
+    "player": {
+      "__id__": 15
+    },
     "_id": "bfh4WvU5JErLpFI9SRknDy"
   },
   {

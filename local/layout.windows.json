@@ -67,7 +67,9 @@
         "cocos-services",
         "scene"
       ]
-    }
+    },
+    "window-1576420092155": {},
+    "worker": {}
   },
   "panels": {
     "project-settings": {
