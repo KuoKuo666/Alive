@@ -4,7 +4,7 @@ const {ccclass, property} = cc._decorator
 export default class ShowTime extends cc.Component {
 
     label: cc.Label | undefined = undefined
-    // 向下取整
+    // 向下取整，从 3 开始
     time: number = 3.99
 
     onLoad (): void {

@@ -22,6 +22,7 @@ export default class MovePlayer extends cc.Component {
     }
 
     update (dt: number): void {
+        // 边界限制
         if (this.node.x > 360) this.node.x = 360
         if (this.node.x < -360) this.node.x = -360
         if (this.node.y > 640) this.node.y = 640

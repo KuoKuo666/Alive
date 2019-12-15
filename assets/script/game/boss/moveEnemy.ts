@@ -10,6 +10,7 @@ export default class MoveEnemy extends cc.Component {
     speed: number = 200
 
     start (): void {
+        // 4 秒后开始运动，每 5 秒随机新方向
         this.schedule(this.randomDir, 5, cc.macro.REPEAT_FOREVER, 4)
     }
 

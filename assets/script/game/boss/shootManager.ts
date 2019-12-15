@@ -1,5 +1,5 @@
 import BulletFactory, { BulletType } from "../bullet/bulletFactory"
-import { Util } from "../../util";
+import { Util } from "../../util"
 
 const {ccclass, property} = cc._decorator
 
@@ -20,8 +20,10 @@ export default class ShootManager extends cc.Component {
     typeMBulletAngle: number = 0
 
     start (): void {
+        // 难度递增
         let deltaTime: number = 5
         let startTime: number = 4
+        // 匿名函数不会被同计时器覆盖
         this.schedule(() => this.shoot(BulletType.R), 0.02, cc.macro.REPEAT_FOREVER, startTime)
         this.schedule(() => this.shoot(BulletType.M), 0.06, cc.macro.REPEAT_FOREVER, startTime + 1 * deltaTime)
         this.schedule(() => this.shoot(BulletType.F), 0.4, cc.macro.REPEAT_FOREVER, startTime + 2 * deltaTime)
@@ -32,6 +34,7 @@ export default class ShootManager extends cc.Component {
         this.schedule(() => this.shoot(BulletType.F), 0.4, cc.macro.REPEAT_FOREVER, startTime + 7 * deltaTime)
     }
 
+    /** 简单射击工厂 */
     shoot (type: BulletType): void {
         if (type === BulletType.R) {
             // 随机型
@@ -55,6 +58,7 @@ export default class ShootManager extends cc.Component {
                 bullet.setPosition(this.enemy.x, this.enemy.y)
             }
         } else if (type === BulletType.B) {
+            // duang～ 型
             let bullet: cc.Node = this.bulletFactory.createBullet(BulletType.B, cc.v2(0, -1), 550)
             bullet.setPosition(this.enemy.x, this.enemy.y)
         }

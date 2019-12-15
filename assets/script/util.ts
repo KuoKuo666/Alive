@@ -1,5 +1,6 @@
 export class Util {
     
+    /** 是否开发模式 */
     static isDebug: boolean = true
 
     /** console.log封装，isDebug置为false跳过打印 */
