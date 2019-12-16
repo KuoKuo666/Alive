@@ -420,8 +420,8 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1576420089767,
-    "meta": 1576420089771,
+    "asset": 1576508418322,
+    "meta": 1576508418337,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
@@ -582,7 +582,7 @@
   "75e36f9b-b506-4177-a1ad-ec9e52281d9d": {
     "asset": 1576301211768,
     "meta": 1576301212989,
-    "relativePath": "script/musicManager.ts"
+    "relativePath": "script/game/musicManager.ts"
   },
   "44c16ac8-5dfc-483c-9610-b6435e967dbd": {
     "asset": 1576411213559,
@@ -597,7 +597,7 @@
   "277481cd-b0c6-4056-9f7f-c5d886cae9fd": {
     "asset": 1576411388081,
     "meta": 1576411484043,
-    "relativePath": "script/showTime.ts"
+    "relativePath": "script/game/showTime.ts"
   },
   "4b76d225-4bd7-408c-b628-7c35c29632dd": {
     "asset": 1576411449124,
@@ -605,8 +605,8 @@
     "relativePath": "script/util.ts"
   },
   "b9f3e315-7238-4439-bd9e-54557a03c309": {
-    "asset": 1576420079955,
-    "meta": 1576420080774,
+    "asset": 1576420140952,
+    "meta": 1576420248839,
     "relativePath": "script/game/player/movePlayer.ts"
   }
 }
