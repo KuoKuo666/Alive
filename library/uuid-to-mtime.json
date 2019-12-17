@@ -430,7 +430,7 @@
     "relativePath": "texture"
   },
   "ee51fefe-63a5-453b-83bf-9ed3bfe40714": {
-    "asset": 1576301062660,
+    "asset": 1576508410252,
     "meta": 1576158046195,
     "relativePath": "script"
   },
@@ -520,7 +520,7 @@
     "relativePath": "over.fire"
   },
   "8cd24ae6-7f92-4538-a7f4-78739b201b3e": {
-    "asset": 1576164109994,
+    "asset": 1576508410252,
     "meta": 1576164102029,
     "relativePath": "script/game"
   },
