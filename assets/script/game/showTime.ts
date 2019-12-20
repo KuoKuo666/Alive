@@ -18,11 +18,11 @@ export default class ShowTime extends cc.Component {
         this.time -= dt
         let show = Math.floor(this.time)
         if (show > 0) {
-            this.label.string = show + ''
+            this.label.string = show + ""
         } else if (show === 0) {
-            this.label.string = 'Go'
+            this.label.string = "Go"
         } else {
-            this.label.string = ''
+            this.label.string = ""
         }
     }
 

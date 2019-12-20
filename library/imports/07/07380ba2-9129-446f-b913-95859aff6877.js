@@ -56,7 +56,7 @@ var BulletFactory = /** @class */ (function (_super) {
     __decorate([
         property({
             type: [cc.Prefab],
-            tooltip: '子弹预制体'
+            tooltip: "子弹预制体"
         })
     ], BulletFactory.prototype, "bulletPrefab", void 0);
     BulletFactory = __decorate([

@@ -1,5 +1,4 @@
 import BulletFactory, { BulletType } from "../bullet/bulletFactory"
-import { Util } from "../../util"
 
 const {ccclass, property} = cc._decorator
 

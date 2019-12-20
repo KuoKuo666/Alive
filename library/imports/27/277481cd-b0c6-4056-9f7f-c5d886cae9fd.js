@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '27748HNsMZAVp9/xdiGyun9', 'showTime');
-// script/showTime.ts
+// script/game/showTime.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
@@ -23,13 +23,13 @@ var ShowTime = /** @class */ (function (_super) {
         this.time -= dt;
         var show = Math.floor(this.time);
         if (show > 0) {
-            this.label.string = show + '';
+            this.label.string = show + "";
         }
         else if (show === 0) {
-            this.label.string = 'Go';
+            this.label.string = "Go";
         }
         else {
-            this.label.string = '';
+            this.label.string = "";
         }
     };
     ShowTime = __decorate([

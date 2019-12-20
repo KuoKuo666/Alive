@@ -9,7 +9,7 @@ export default class ColliderPlayer extends cc.Component {
 
     onCollisionEnter (other: cc.Collider, self: cc.Collider): void {
         cc.audioEngine.stopMusic()
-        cc.director.loadScene('over')
+        cc.director.loadScene("over")
     }
 
 }

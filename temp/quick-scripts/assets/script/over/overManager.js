@@ -10,7 +10,7 @@ var Over = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Over.prototype.again = function () {
-        cc.director.loadScene('game');
+        cc.director.loadScene("game");
     };
     Over = __decorate([
         ccclass

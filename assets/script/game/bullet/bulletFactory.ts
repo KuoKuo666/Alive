@@ -21,7 +21,7 @@ export default class BulletFactory extends cc.Component {
 
     @property({
         type: [cc.Prefab],
-        tooltip: '子弹预制体'
+        tooltip: "子弹预制体"
     })
     bulletPrefab: cc.Prefab[] = []
 

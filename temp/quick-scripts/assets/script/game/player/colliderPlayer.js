@@ -14,7 +14,7 @@ var ColliderPlayer = /** @class */ (function (_super) {
     };
     ColliderPlayer.prototype.onCollisionEnter = function (other, self) {
         cc.audioEngine.stopMusic();
-        cc.director.loadScene('over');
+        cc.director.loadScene("over");
     };
     ColliderPlayer = __decorate([
         ccclass

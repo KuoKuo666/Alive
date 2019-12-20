@@ -420,8 +420,8 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1576508418322,
-    "meta": 1576508418337,
+    "asset": 1576850060626,
+    "meta": 1576850060641,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
@@ -530,13 +530,13 @@
     "relativePath": "script/over"
   },
   "8e8fe042-e351-4415-b678-26e37370270c": {
-    "asset": 1576164321419,
-    "meta": 1576164326383,
+    "asset": 1576849910237,
+    "meta": 1576849965150,
     "relativePath": "script/over/overManager.ts"
   },
   "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
-    "asset": 1576301643877,
-    "meta": 1576401431615,
+    "asset": 1576849868014,
+    "meta": 1576849965106,
     "relativePath": "script/game/bullet/bulletBase.ts"
   },
   "2fd463c1-8947-4873-a8e2-d11b08cc7977": {
@@ -565,8 +565,8 @@
     "relativePath": "script/game/bullet/bullet_3.ts"
   },
   "07380ba2-9129-446f-b913-95859aff6877": {
-    "asset": 1576255259168,
-    "meta": 1576255261400,
+    "asset": 1576849856533,
+    "meta": 1576849965113,
     "relativePath": "script/game/bullet/bulletFactory.ts"
   },
   "4d4ba6bb-d94a-4cf9-8c03-b054876fb826": {
@@ -575,8 +575,8 @@
     "relativePath": "sound/bgm.mp3"
   },
   "446b9473-26fb-4c20-8235-c3a8befaf9e8": {
-    "asset": 1576301619124,
-    "meta": 1576401431616,
+    "asset": 1576849876795,
+    "meta": 1576849965129,
     "relativePath": "script/game/player/colliderPlayer.ts"
   },
   "75e36f9b-b506-4177-a1ad-ec9e52281d9d": {
@@ -595,13 +595,13 @@
     "relativePath": "script/game/boss/shootManager.ts"
   },
   "277481cd-b0c6-4056-9f7f-c5d886cae9fd": {
-    "asset": 1576411388081,
-    "meta": 1576411484043,
+    "asset": 1576849898523,
+    "meta": 1576849965134,
     "relativePath": "script/game/showTime.ts"
   },
   "4b76d225-4bd7-408c-b628-7c35c29632dd": {
-    "asset": 1576411449124,
-    "meta": 1576411484054,
+    "asset": 1576849927917,
+    "meta": 1576849965150,
     "relativePath": "script/util.ts"
   },
   "b9f3e315-7238-4439-bd9e-54557a03c309": {
