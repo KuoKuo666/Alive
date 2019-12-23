@@ -6,13 +6,13 @@ const {ccclass, property} = cc._decorator
 export class BulletBase extends cc.Component {
 
     /** 移动方向 */
-    moveDir: cc.Vec2 = new cc.Vec2(0, 0)
+    private moveDir: cc.Vec2 = new cc.Vec2(0, 0)
     /** 移动速度 */
-    moveSpeed: number = 0
+    private moveSpeed: number = 0
     /** 标签 */
-    tag: BulletType | undefined = undefined
+    private tag: BulletType | undefined = undefined
     /** 子弹工厂 */
-    bulletFactory: BulletFactory | undefined = undefined
+    private bulletFactory: BulletFactory | undefined = undefined
 
     /** 从节点池取出时初始化属性 */
     reuse (bulletFactory: BulletFactory, dir: cc.Vec2, speed: number, tag: BulletType): void {

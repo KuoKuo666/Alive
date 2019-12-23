@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '75e36+btQZBd6Gt7J5SKB2d', 'musicManager');
-// script/musicManager.ts
+// script/game/musicManager.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;

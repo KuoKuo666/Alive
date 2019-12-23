@@ -12,7 +12,6 @@ export default class MusicManager extends cc.Component {
         this.scheduleOnce(() => {
             cc.audioEngine.playMusic(this.bgm, true)
         }, 0.5)
-        
     }
 
 }

@@ -5,7 +5,7 @@ const {ccclass, property} = cc._decorator
 export class Bullet_3 extends BulletBase {
 
     /** 收缩方向 */
-    scaleDir: number = 1
+    private scaleDir: number = 1
 
     // 收缩
     update (dt: number): void {

@@ -18,7 +18,7 @@ export default class MovePlayer extends cc.Component {
         this.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this)
     }
 
-    onTouchMove (event: cc.Touch): void {
+    onTouchMove (event: cc.Event.EventTouch): void {
         let delta = event.getDelta()
         this.player.x += delta.x
         this.player.y += delta.y
