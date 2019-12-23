@@ -6,46 +6,46 @@ const {ccclass, property} = cc._decorator
 export class BulletBase extends cc.Component {
 
     /** 移动方向 */
-    private moveDir: cc.Vec2 = new cc.Vec2(0, 0)
+    _moveDir: cc.Vec2 = new cc.Vec2(0, 0)
+    get moveDir (): cc.Vec2 {
+        return this._moveDir
+    }
+    set moveDir (dir: cc.Vec2) {
+        this._moveDir.x = dir.x
+        this._moveDir.y = dir.y
+    }
+    
     /** 移动速度 */
-    private moveSpeed: number = 0
-    /** 标签 */
+    _moveSpeed: number = 0
+    get moveSpeed (): number {
+        return this._moveSpeed
+    }
+    set moveSpeed (speed: number) {
+        if (speed < 0) { return }
+        this._moveSpeed = speed
+    }
+
+    /** 子弹类型标签 */
     private tag: BulletType | undefined = undefined
+
     /** 子弹工厂 */
     private bulletFactory: BulletFactory | undefined = undefined
 
     /** 从节点池取出时初始化属性 */
     reuse (bulletFactory: BulletFactory, dir: cc.Vec2, speed: number, tag: BulletType): void {
         this.bulletFactory = bulletFactory
-        this.setDir(dir)
-        this.setSpeed(speed)
-        this.setTag(tag)
+        this.moveSpeed = speed
+        this.tag = tag
+        this.moveDir = dir
     }
 
     unuse (): void {
         // Util.log('回收成功')
     }
 
-    /** 碰撞后回收子弹 */
+    /** 碰撞后回调 */
     onCollisionEnter (other: cc.Collider, self: cc.Collider): void {
         // Util.log('碰撞')
-    }
-
-    setSpeed (speed: number): void {
-        this.moveSpeed = speed
-    }
-
-    setDir (dir: cc.Vec2): void {
-        this.moveDir.x = dir.x
-        this.moveDir.y = dir.y
-    }
-
-    setTag (tag: BulletType): void {
-        this.tag = tag
-    }
-
-    getTag (): BulletType {
-        return this.tag
     }
 
     update (dt: number): void {
@@ -59,7 +59,7 @@ export class BulletBase extends cc.Component {
         /** 边界回收 */
         if (Math.abs(this.node.x) > 360 || Math.abs(this.node.y) > 640) {
             // Util.log('边界回收')
-            this.bulletFactory.bulletPools[this.getTag()].put(this.node)
+            this.bulletFactory.bulletPools[this.tag].put(this.node)
         }
     }
 

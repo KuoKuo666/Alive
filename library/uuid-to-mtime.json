@@ -420,8 +420,8 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1577107161208,
-    "meta": 1577107161214,
+    "asset": 1577108715701,
+    "meta": 1577108715707,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
@@ -594,11 +594,6 @@
     "meta": 1577107159179,
     "relativePath": "script/game/bullet/bullet_3.ts"
   },
-  "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
-    "asset": 1577107062356,
-    "meta": 1577107159194,
-    "relativePath": "script/game/bullet/bulletBase.ts"
-  },
   "75e36f9b-b506-4177-a1ad-ec9e52281d9d": {
     "asset": 1577107208050,
     "meta": 1577107215755,
@@ -608,5 +603,10 @@
     "asset": 1577107212867,
     "meta": 1577107215755,
     "relativePath": "script/game/player/movePlayer.ts"
+  },
+  "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
+    "asset": 1577108896100,
+    "meta": 1577108903610,
+    "relativePath": "script/game/bullet/bulletBase.ts"
   }
 }

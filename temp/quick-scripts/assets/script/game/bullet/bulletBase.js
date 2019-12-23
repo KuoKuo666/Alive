@@ -9,41 +9,52 @@ var BulletBase = /** @class */ (function (_super) {
     function BulletBase() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         /** 移动方向 */
-        _this.moveDir = new cc.Vec2(0, 0);
+        _this._moveDir = new cc.Vec2(0, 0);
         /** 移动速度 */
-        _this.moveSpeed = 0;
-        /** 标签 */
+        _this._moveSpeed = 0;
+        /** 子弹类型标签 */
         _this.tag = undefined;
         /** 子弹工厂 */
         _this.bulletFactory = undefined;
         return _this;
     }
+    Object.defineProperty(BulletBase.prototype, "moveDir", {
+        get: function () {
+            return this._moveDir;
+        },
+        set: function (dir) {
+            this._moveDir.x = dir.x;
+            this._moveDir.y = dir.y;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(BulletBase.prototype, "moveSpeed", {
+        get: function () {
+            return this._moveSpeed;
+        },
+        set: function (speed) {
+            if (speed < 0) {
+                return;
+            }
+            this._moveSpeed = speed;
+        },
+        enumerable: true,
+        configurable: true
+    });
     /** 从节点池取出时初始化属性 */
     BulletBase.prototype.reuse = function (bulletFactory, dir, speed, tag) {
         this.bulletFactory = bulletFactory;
-        this.setDir(dir);
-        this.setSpeed(speed);
-        this.setTag(tag);
+        this.moveSpeed = speed;
+        this.tag = tag;
+        this.moveDir = dir;
     };
     BulletBase.prototype.unuse = function () {
         // Util.log('回收成功')
     };
-    /** 碰撞后回收子弹 */
+    /** 碰撞后回调 */
     BulletBase.prototype.onCollisionEnter = function (other, self) {
         // Util.log('碰撞')
-    };
-    BulletBase.prototype.setSpeed = function (speed) {
-        this.moveSpeed = speed;
-    };
-    BulletBase.prototype.setDir = function (dir) {
-        this.moveDir.x = dir.x;
-        this.moveDir.y = dir.y;
-    };
-    BulletBase.prototype.setTag = function (tag) {
-        this.tag = tag;
-    };
-    BulletBase.prototype.getTag = function () {
-        return this.tag;
     };
     BulletBase.prototype.update = function (dt) {
         if (this.moveSpeed === 0)
@@ -57,7 +68,7 @@ var BulletBase = /** @class */ (function (_super) {
         /** 边界回收 */
         if (Math.abs(this.node.x) > 360 || Math.abs(this.node.y) > 640) {
             // Util.log('边界回收')
-            this.bulletFactory.bulletPools[this.getTag()].put(this.node);
+            this.bulletFactory.bulletPools[this.tag].put(this.node);
         }
     };
     BulletBase = __decorate([
