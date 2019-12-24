@@ -49,7 +49,7 @@ export class BulletBase extends cc.Component {
     }
 
     update (dt: number): void {
-        if (this.moveSpeed === 0) return
+        if (this.moveSpeed === 0) { return }
         if (this.moveDir.x !== 0) {
             this.node.x += this.moveDir.x * this.moveSpeed * dt
         }

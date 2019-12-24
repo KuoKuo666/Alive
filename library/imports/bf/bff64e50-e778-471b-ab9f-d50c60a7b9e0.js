@@ -57,8 +57,9 @@ var BulletBase = /** @class */ (function (_super) {
         // Util.log('碰撞')
     };
     BulletBase.prototype.update = function (dt) {
-        if (this.moveSpeed === 0)
+        if (this.moveSpeed === 0) {
             return;
+        }
         if (this.moveDir.x !== 0) {
             this.node.x += this.moveDir.x * this.moveSpeed * dt;
         }

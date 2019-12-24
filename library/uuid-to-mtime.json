@@ -420,8 +420,8 @@
     "relativePath": "model/primitives.fbx"
   },
   "971c75b4-571d-45af-b5dc-28237ee41c78": {
-    "asset": 1577108715701,
-    "meta": 1577108715707,
+    "asset": 1577195546051,
+    "meta": 1577195546060,
     "relativePath": "game.fire"
   },
   "1e8f2d75-43c2-4d34-b521-bf21e84790d5": {
@@ -605,8 +605,8 @@
     "relativePath": "script/game/player/movePlayer.ts"
   },
   "bff64e50-e778-471b-ab9f-d50c60a7b9e0": {
-    "asset": 1577108896100,
-    "meta": 1577108903610,
+    "asset": 1577195520444,
+    "meta": 1577195536508,
     "relativePath": "script/game/bullet/bulletBase.ts"
   }
 }
