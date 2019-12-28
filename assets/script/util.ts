@@ -5,7 +5,7 @@ export class Util {
 
     /** console.log封装，isDebug置为false跳过打印 */
     static log (...args: any[]): void {
-        if (!this.isDebug) return
+        if (!this.isDebug) { return }
         for (let item of args) {
             console.log(item)
         }
