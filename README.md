@@ -2,6 +2,7 @@
 > 一款弹幕生存游戏。Alive！
 # CocosCreator v2.1.3
 源码状态：开发完成。
+
 视频演示：
 [https://www.bilibili.com/video/BV1pJ411k7nA](https://www.bilibili.com/video/BV1pJ411k7nA)
 
